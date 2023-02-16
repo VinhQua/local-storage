@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+
+}
+body{
+    background: url('../oh-la-la.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items:baseline;
+    justify-items:flex-start ;
+    font-family: cursive;
+    
+    
+}
+.content-wrapper{
+    background-color: rgba(255, 255, 255,.9);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0,.1);
+    position: relative;
+    padding: 2rem;
+    height: fit-content;
+}
+figure{
+    flex-basis: 100%;
+    text-align: center;
+    height: fit-content;
+    margin-top: 7rem;
+
+}
+svg{
+    background-color: rgba(0, 0, 0,0.1);
+    padding: 1.5rem;
+    border-radius: 50%;
+    
+}
+h2{
+    text-align: center;
+}
+ul{
+    border-bottom: .01rem solid rgb(188, 188, 188);
+    padding: 1rem;
+    margin-bottom:1.5rem;
+    list-style: none;
+    padding-left: 0;
+    font-weight: bold;
+    padding-bottom: .3rem;
+}
+.content-wrapper ul li{
+    margin-bottom: .5rem;
+}
+.content-wrapper form input{
+    padding: 0.8rem;
+    border: .001rem solid rgb(219, 219, 219);
+}
+.content-wrapper ul li input{
+    display: none;
+}
+.content-wrapper ul li input + label::before{
+  content: "⛶";
+  margin-right:.7rem ;
+  
+}
+.content-wrapper ul li input:checked + label::before{
+    content:"🍳";
+}
+#add-item input:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+   
+}
